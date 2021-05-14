@@ -32,7 +32,7 @@ myHometask.howIDoIt = 'eslint rygalsya ochen';
 interface MyArray<T> {
   [N: number]: T;
 
-  reduce<U>(cb: (el: T, cur: number, index?: number, acc?: U) => U): U;
+  reduce<U>(callbackfn: (accumulator: U, currentValue: T, currentIndex: number, array: T[]) => U, initValue: U): U;
 }
 
 const myArray: MyArray<number> = [1, 2, 3];
