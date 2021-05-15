@@ -1,0 +1,60 @@
+@import '../../\ variables';
+.root {
+  height: 93px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $dark;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1125px;
+  height: 63px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pokemonLogo {
+  width: 158px;
+  height: 63px;
+}
+
+.menuWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 660px;
+  width: 100%;
+}
+
+.menuLink {
+  font-size: 25px;
+  line-height: 29px;
+  color: $dark;
+  text-decoration: none;
+  position: relative;
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1%;
+    height: 3px;
+
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    background: $dark;
+    border-radius: 8px;
+    transition: opacity, width 0.3s ease 0s;
+  }
+
+  &:hover {
+    &::after {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+}
