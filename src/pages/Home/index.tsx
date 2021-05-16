@@ -5,6 +5,7 @@ import Layout from '../../components/Layout';
 import Button from '../../components/Button';
 
 import s from './Home.module.scss';
+import Parallax from '../../components/Paralax';
 
 const HomePage = () => {
   return (
@@ -18,12 +19,14 @@ const HomePage = () => {
           <p>You can know the type of Pokemon, its strengths, disadvantages and abilities</p>
           <Button
             onClick={(event) => {
-              console.log('button clicked');
+              event.preventDefault();
             }}>
             See pokemons
           </Button>
         </div>
-        <div className={s.contentParalax}>We&apos;ll see Paralax here soon...</div>
+        <div className={s.contentParalax}>
+          <Parallax />
+        </div>
       </Layout>
     </div>
   );
