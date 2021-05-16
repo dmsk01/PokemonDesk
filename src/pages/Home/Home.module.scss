@@ -8,13 +8,15 @@
 .contentWrap {
   display: flex;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 150px;
 }
 
 .contentText {
-  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  margin: 0px 0px 55px 0px;
 }
 
 .contentParalax {
-  font-size: 14px;
+  font-size: inherit;
 }
