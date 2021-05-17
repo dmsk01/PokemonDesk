@@ -4,18 +4,20 @@ import s from './Paralax.module.scss';
 
 import SmallPokeBallPng from './assets/PokeBall1.png';
 import CloudPng from './assets/Cloud1.png';
-import PokeBallPng from './assets/Pokeball2.png';
+import PokeBallPng from './assets/PokeBall2.png';
 import CloudBigPng from './assets/Cloud2.png';
 import PikachuPng from './assets/Pikachu.png';
 
 const Parallax = () => {
   const [screenX, setScreenX] = useState(0);
   const [screenY, setScreenY] = useState(0);
+
+  const handleMouseMove = (event: MouseEvent) => {
+    setScreenX(event.screenX);
+    setScreenY(event.screenY);
+  };
+
   useEffect(() => {
-    const handleMouseMove = (event: MouseEvent) => {
-      setScreenX(event.screenX);
-      setScreenY(event.screenY);
-    };
     window.addEventListener('mousemove', handleMouseMove);
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
