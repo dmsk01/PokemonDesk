@@ -1,5 +1,4 @@
-import React from 'react';
-import Header from '../../components/Header';
+import React, { useEffect, useState } from 'react';
 import Heading from '../../components/Heading';
 import PokemonCard from '../../components/PokemonCard';
 import s from './Pokedex.module.scss';
@@ -240,22 +239,55 @@ const pokemons: Array<IPokemon> = [
     weight: 29,
   },
 ];
+
 interface IPokedexPageProps {
   title?: string;
 }
 
 const Pokedex: React.FC<IPokedexPageProps> = () => {
+  const [totalPokemons, setTotalPokemons] = useState(0);
+  const [apiPokemons, setApiPokemons] = useState<IPokemon[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [isError, setIsError] = useState(false);
+
+  useEffect(() => {
+    setIsLoading(true);
+    fetch('http://zar.hosthot.ru/api/v1/pokemons')
+      .then((res) => res.json())
+      .then((data) => {
+        setTotalPokemons(data.total);
+        setApiPokemons(data.pokemons);
+        setIsError(false);
+      })
+      .catch(() => {
+        setIsError(true);
+      })
+      .finally(() => {
+        setIsLoading(false);
+      });
+  }, []);
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+  if (isError) {
+    return <div>Something went wrong ...</div>;
+  }
   return (
     <div>
-      <Header />
       <div className={s.root}>
         <div className={s.wrapper}>
           <Heading tag="h1" size="36px" className={s.pageTitle}>
-            800 <b>Pokemons</b> for you to choose your favorite
+            {totalPokemons} <b>Pokemons</b> for you to choose your favorite
           </Heading>
           <div className={s.cards}>
             {pokemons.map(({ name, stats, types, img, id }) => (
               <PokemonCard key={id} name={name} attack={stats.attack} defence={stats.defense} types={types} img={img} />
+            ))}
+          </div>
+          <div>
+            {apiPokemons.map((item) => (
+              <div>{item.name}</div>
             ))}
           </div>
         </div>
