@@ -26,13 +26,14 @@ const fontSizeToEl: IFontSize = {
 interface IHeadingProps {
   tag?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p';
   size?: '72px' | '64px' | '36px' | '24px' | '18px' | '16px' | '12px';
+  className?: string | {};
 }
 
-const Heading: React.FC<IHeadingProps> = ({ children, tag, size }) => {
+const Heading: React.FC<IHeadingProps> = ({ children, tag, size, className }) => {
   const style = size ? { fontSize: size } : '';
   const tagName = tag || fontSizeToEl[size as keyof typeof fontSizeToEl];
 
-  const el = React.createElement(tagName, { style }, children);
+  const el = React.createElement(tagName, { style, className }, children);
 
   return el;
 };
