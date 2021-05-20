@@ -15,13 +15,13 @@ interface IColor {
 }
 const pokemonTypesColors: IColor = {
   '#a1a1a1': ['stile', 'dark', 'rock'],
-  '#70a83b': ['grass', 'bug'],
-  '#a2cff0': ['ice', 'water'],
-  '#f76545': ['fire', 'fighting', 'dragon'],
+  '#64D368': ['grass', 'bug'],
+  '#3FBDFD': ['ice', 'water'],
+  '#D33C2E': ['fire', 'fighting', 'dragon'],
   '#76aadb': ['normal', 'gosth', 'flying'],
   '#a974bc': ['poison', 'psychic', 'fairy', 'ghost'],
   '#9b897b': ['ground'],
-  '#f7c545': ['electric'],
+  '#F2BB07': ['electric'],
 };
 
 const PokemonCard: React.FC<IPokemonCardProps> = ({ name, attack, defence, types, img }) => {
