@@ -1,4 +1,5 @@
 import React from 'react';
+import cn from 'classnames';
 import Heading from '../Heading';
 
 import s from './PokemonCard.module.scss';
@@ -9,20 +10,6 @@ interface IPokemonCardProps {
   img: string;
   name: string;
 }
-
-interface IColor {
-  [color: string]: string[];
-}
-const pokemonTypesColors: IColor = {
-  '#a1a1a1': ['stile', 'dark', 'rock'],
-  '#64D368': ['grass', 'bug'],
-  '#3FBDFD': ['ice', 'water'],
-  '#D33C2E': ['fire', 'fighting', 'dragon'],
-  '#76aadb': ['normal', 'gosth', 'flying'],
-  '#a974bc': ['poison', 'psychic', 'fairy', 'ghost'],
-  '#9b897b': ['ground'],
-  '#F2BB07': ['electric'],
-};
 
 const PokemonCard: React.FC<IPokemonCardProps> = ({ name, attack, defence, types, img }) => {
   return (
@@ -42,20 +29,11 @@ const PokemonCard: React.FC<IPokemonCardProps> = ({ name, attack, defence, types
           </div>
         </div>
         <div className={s.labelWrap}>
-          {types.map((type) => {
-            let labelColor;
-            for (const [color, pokemonTypes] of Object.entries(pokemonTypesColors)) {
-              if (pokemonTypes.includes(type)) {
-                labelColor = color;
-                break;
-              }
-            }
-            return (
-              <span key={type} style={{ background: labelColor }} className={s.label}>
-                {type}
-              </span>
-            );
-          })}
+          {types.map((type) => (
+            <span key={type} className={cn(s[type as keyof typeof s], s.label)}>
+              {type}
+            </span>
+          ))}
         </div>
       </div>
       <div className={s.pictureWrap}>
