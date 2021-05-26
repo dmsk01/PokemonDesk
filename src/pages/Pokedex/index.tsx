@@ -1,4 +1,4 @@
-import React, {  useState } from 'react';
+import React, { useState } from 'react';
 import Heading from '../../components/Heading';
 import PokemonCard from '../../components/PokemonCard';
 import s from './Pokedex.module.scss';
@@ -46,14 +46,6 @@ const Pokedex: React.FC<IPokedexPageProps> = () => {
           <Heading tag="h1" size="36px" className={s.pageTitle}>
             {!isLoading && data && data.total} <b>Pokemons</b> for you to choose your favorite
           </Heading>
-          {/* <div>
-            <input
-              style={{ border: '1px solid black' }}
-              type="text"
-              value={searchValue}
-              onChange={handleSearchChange}
-            />
-          </div> */}
           <Input onChange={handleSearchChange} value={searchValue} />
           <div className={s.cards}>
             {!isLoading &&

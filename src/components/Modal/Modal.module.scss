@@ -10,10 +10,9 @@
   display: block;
   margin: 0px 0px 15px 0px;
 }
-
 .body {
   width: 100%;
-  max-height: 371px;
+  height: 100%;
   border-radius: 8px;
   overflow: hidden;
   background: linear-gradient(180deg, #732119 42.19%, #d93e30 100%);
@@ -22,18 +21,19 @@
 
 .row {
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
 }
 
 .imageWrapper {
-  height: 100%;
+  min-height: 100%;
   max-width: 364px;
-  max-height: 364px;
   flex: 0 1 364px;
   background: linear-gradient(270deg, #b33327 0.15%, #d93e30 100%);
   box-shadow: 4px 4px 8px rgba(1, 28, 64, 0.2);
   padding: 38px 10px 23px;
+  position: relative;
 }
 .image {
   width: 100%;
@@ -104,4 +104,166 @@
 
 .value {
   font-weight: 700;
+}
+
+.abilities {
+  width: 100%;
+  max-width: 265px;
+  background-color: #fdfdfd;
+  padding: 15px 30px;
+  border-radius: 6px;
+  margin: 0px 0px 25px 0px;
+}
+.abilitiesTitle {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0px 0px 8px 0px;
+}
+.abilitiesText {
+  font-size: inherit;
+}
+.strength {
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fdfdfd;
+  border-radius: 6px;
+  margin: 0px 0px 25px 0px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+.strengthColumn {
+  max-width: 168px;
+  margin: 0px 25px 0px 0px;
+}
+.strengthTitle {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0px 0px 4px 0px;
+}
+.strengthValue {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0px 0px 5px 0px;
+}
+.strengthProgress {
+  display: block;
+}
+
+progress {
+  -webkit-writing-mode: horizontal-tb !important;
+  -webkit-appearance: progress-bar;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  border-radius: 3px;
+  vertical-align: -0.2em;
+  height: 5px;
+  background: #e3e3e3;
+  overflow: hidden;
+}
+progress::-webkit-progress-bar {
+  width: 255px;
+  border-radius: 7.5px;
+  height: 15px;
+  background: #e3e3e3;
+}
+.strengthProgressHp progress::-webkit-progress-value {
+  background: #64d368;
+}
+.strengthProgressHp progress::-moz-progress-value {
+  background: #64d368;
+}
+.strengthProgressExp progress::-webkit-progress-value {
+  background: #f4cd0e;
+}
+.strengthProgressExp progress::-moz-progress-value {
+  background: #f4cd0e;
+}
+progress::-webkit-progress-value {
+  background: #add136;
+}
+progress::-moz-progress-value {
+  background: #add136;
+}
+
+.capabilities {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.capability {
+  background-color: #fdfdfd;
+  border-radius: 6px;
+  padding: 8px;
+  text-align: center;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  -ms-align-items: center;
+  align-items: center;
+  min-width: 70px;
+}
+.capabilityValue {
+  width: 35px;
+  height: 35px;
+  border: 3px solid #000;
+  border-radius: 50%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 10px 0px;
+}
+.capabilityName {
+  font-size: 12px;
+}
+
+// Label
+
+.label {
+  background: #f2b716;
+  box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.18);
+  border-radius: 11px;
+  height: 15px;
+  min-width: 60px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #212121;
+  padding: 0 12px 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.labelWrap {
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }

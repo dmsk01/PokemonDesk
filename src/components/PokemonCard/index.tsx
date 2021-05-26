@@ -30,13 +30,13 @@ const PokemonCard: React.FC<IPokemonCardProps> = ({ name, attack, defence, types
         </div>
         <div className={s.labelWrap}>
           {types.map((type) => (
-            <span key={type} className={cn(s[type as keyof typeof s], s.label)}>
+            <span key={type} className={cn(s[type as keyof typeof s], s.label, s.colorWrap)}>
               {type}
             </span>
           ))}
         </div>
       </div>
-      <div className={cn(s[types[0] as keyof typeof s], s.pictureWrap)}>
+      <div className={cn(s.pictureWrap, s.colorWrap, s[types[0] as keyof typeof s])}>
         <img src={img} alt={name} />
       </div>
     </div>

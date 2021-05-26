@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import s from './Input.module.scss';
 
 interface IInput {
@@ -10,7 +10,7 @@ const Input: React.FC<IInput> = ({ onChange, value }) => {
   const onChangeHandle = (e: React.ChangeEvent<HTMLInputElement>) => {
     onChange && onChange(e);
   };
-  
+
   return (
     <div className={s.inputWrapper}>
       <input
