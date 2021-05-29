@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { LinkEnum } from '../../routes';
+import { navigate, A } from 'hookrouter';
 import Heading from '../../components/Heading';
 import PokemonCard from '../../components/PokemonCard';
 import s from './Pokedex.module.scss';
@@ -32,6 +34,7 @@ const Pokedex: React.FC<IPokedexPageProps> = () => {
       name: e.target.value,
     }));
   };
+  // const onClick = (id: string | number) => navigate(`${LinkEnum.POKEDEX}/${id}`);
 
   // if (isLoading) {
   //   return <div>Loading...</div>;
@@ -51,14 +54,17 @@ const Pokedex: React.FC<IPokedexPageProps> = () => {
             {!isLoading &&
               data &&
               data.pokemons.map((item: PokemonRequest) => (
-                <PokemonCard
-                  key={item.id}
-                  name={item.name}
-                  attack={item.stats.attack}
-                  defence={item.stats.defense}
-                  types={item.types}
-                  img={item.img}
-                />
+                <A href={`${LinkEnum.POKEDEX}/${item.id}`}>
+                  <PokemonCard
+                    key={item.id}
+                    name={item.name}
+                    attack={item.stats.attack}
+                    defence={item.stats.defense}
+                    types={item.types}
+                    img={item.img}
+                    // onClick={onClick}
+                  />
+                </A>
               ))}
           </div>
         </div>

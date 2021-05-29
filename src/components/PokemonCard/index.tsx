@@ -9,6 +9,9 @@ interface IPokemonCardProps {
   types: string[];
   img: string;
   name: string;
+  attack: number;
+  defence: number;
+  // onClick?: (id: string | number) => void;
 }
 
 const PokemonCard: React.FC<IPokemonCardProps> = ({ name, attack, defence, types, img }) => {
