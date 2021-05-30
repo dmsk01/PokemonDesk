@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
+import { A } from 'hookrouter';
 import { LinkEnum } from '../../routes';
-import { navigate, A } from 'hookrouter';
 import Heading from '../../components/Heading';
 import PokemonCard from '../../components/PokemonCard';
 import s from './Pokedex.module.scss';
@@ -46,7 +46,7 @@ const Pokedex: React.FC<IPokedexPageProps> = () => {
     <>
       <div className={s.root}>
         <div className={s.wrapper}>
-          <Heading tag="h1" size="36px" className={s.pageTitle}>
+          <Heading size="m" className={s.pageTitle}>
             {!isLoading && data && data.total} <b>Pokemons</b> for you to choose your favorite
           </Heading>
           <Input onChange={handleSearchChange} value={searchValue} />
@@ -54,9 +54,8 @@ const Pokedex: React.FC<IPokedexPageProps> = () => {
             {!isLoading &&
               data &&
               data.pokemons.map((item: PokemonRequest) => (
-                <A href={`${LinkEnum.POKEDEX}/${item.id}`}>
+                <A key={item.id} href={`${LinkEnum.POKEDEX}/${item.id}`}>
                   <PokemonCard
-                    key={item.id}
                     name={item.name}
                     attack={item.stats.attack}
                     defence={item.stats.defense}

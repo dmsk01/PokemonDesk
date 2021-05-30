@@ -4,13 +4,22 @@ import cn from 'classnames';
 
 import s from './Modal.module.scss';
 import closeIcon from './assets/closeIcon.png';
-import cardImg from './assets/cardImg.png';
 
 interface IModal {
   id: string | number;
+  name?: string;
+  exp?: number;
+  hp?: number;
+  img?: string;
+  def?: number;
+  attack?: number;
+  spDef?: number;
+  spAttack?: number;
+  type?: string;
+  abilities?: string;
 }
 
-const Modal: React.FC<IModal> = ({ id }) => {
+const Modal: React.FC<IModal> = ({ id, abilities, name, exp, hp, img, def, attack, spDef, spAttack, type }) => {
   return (
     <div className={s.wrapper}>
       <div className={s.close}>
@@ -19,14 +28,14 @@ const Modal: React.FC<IModal> = ({ id }) => {
       <div className={s.body}>
         <div className={s.row}>
           <div className={s.imageWrapper}>
-            <img className={s.image} src={cardImg} alt={cardImg} />
+            <img className={s.image} src={img} alt={name} />
             <div className={s.labelWrap}>
-              <span className={s.label}>Fire</span>
+              <span className={cn(s[type as keyof typeof s], s.label)}>{type}</span>
             </div>
           </div>
           <div className={s.info}>
             <div className={s.header}>
-              <h2 className={s.pokemonName}>Charizard</h2>
+              <h2 className={s.pokemonName}>{name}</h2>
               <div className={s.rate}>
                 <div className={s.generation}>Generation 1</div>
                 <div className={s.idLabel}>{id}</div>
@@ -34,39 +43,39 @@ const Modal: React.FC<IModal> = ({ id }) => {
             </div>
             <div className={s.abilities}>
               <h2 className={s.abilitiesTitle}>Abilities</h2>
-              <div className={s.abilitiesText}>Overgrow - Chlorophyll</div>
+              <div className={s.abilitiesText}>{abilities}</div>
             </div>
             <div className={s.strength}>
               <div className={s.strengthColumn}>
                 <h3 className={s.strengthTitle}>Healthy Points</h3>
-                <div className={s.strengthValue}>1 000 000</div>
+                <div className={s.strengthValue}>{hp}</div>
                 <div className={cn(s.strengthProgress, s.strengthProgressHp)}>
-                  <progress value="60" max="100" />
+                  <progress value={hp} max="1000" />
                 </div>
               </div>
               <div className={s.strengthColumn}>
                 <h3 className={s.strengthTitle}>Experience</h3>
-                <div className={s.strengthValue}>1 000 000</div>
+                <div className={s.strengthValue}>{exp}</div>
                 <div className={cn(s.strengthProgress, s.strengthProgressExp)}>
-                  <progress value="90" max="100" />
+                  <progress value={exp} max="1000" />
                 </div>
               </div>
             </div>
             <div className={s.capabilities}>
               <div className={s.capability}>
-                <div className={s.capabilityValue}>49</div>
+                <div className={s.capabilityValue}>{def}</div>
                 <div className={s.capabilityName}>Defense</div>
               </div>
               <div className={s.capability}>
-                <div className={s.capabilityValue}>165</div>
+                <div className={s.capabilityValue}>{attack}</div>
                 <div className={s.capabilityName}>Attack</div>
               </div>
               <div className={s.capability}>
-                <div className={s.capabilityValue}>130</div>
+                <div className={s.capabilityValue}>{spAttack}</div>
                 <div className={s.capabilityName}>Sp Attack</div>
               </div>
               <div className={s.capability}>
-                <div className={s.capabilityValue}>271</div>
+                <div className={s.capabilityValue}>{spDef}</div>
                 <div className={s.capabilityName}>Sp Defense</div>
               </div>
             </div>

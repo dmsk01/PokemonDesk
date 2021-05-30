@@ -81,7 +81,7 @@
   justify-content: center;
   align-items: center;
   background: #f2cb07;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .abilities {
@@ -266,4 +266,47 @@ progress::-moz-progress-value {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+.stile,
+.dark,
+.rock {
+  background: #a1a1a1;
+}
+
+.grass,
+.bug {
+  background: #64d368;
+}
+
+.ice,
+.water {
+  background: #3fbdfd;
+}
+
+.fire,
+.fighting,
+.dragon {
+  background: #ec4917;
+}
+
+.normal,
+.gosth,
+.flying {
+  background: #7faadb;
+}
+
+.poison,
+.psychic,
+.fairy,
+.ghost {
+  background: #a974bc;
+}
+
+.ground {
+  background: #9b787b;
+}
+
+.electric {
+  background: #f2bb07;
 }
