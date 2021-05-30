@@ -25,7 +25,7 @@ describe('Heading', () => {
 
   it('render', () => {
     act(() => {
-      render(<Heading />, container);
-    }); 
+      render(<Heading size="xl" />, container);
+    });
   });
 });

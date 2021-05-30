@@ -11,6 +11,7 @@ interface CssExports {
   'capabilityName': string;
   'capabilityValue': string;
   'close': string;
+  'colorWrap': string;
   'dark': string;
   'dragon': string;
   'electric': string;
@@ -40,6 +41,7 @@ interface CssExports {
   'rate': string;
   'rock': string;
   'row': string;
+  'steel': string;
   'stile': string;
   'strength': string;
   'strengthColumn': string;

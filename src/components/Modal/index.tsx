@@ -1,6 +1,6 @@
 import React from 'react';
-
 import cn from 'classnames';
+import toCapitalizeFirstLetter from '../../utils/toCapitalizeFirstLetter';
 
 import s from './Modal.module.scss';
 import closeIcon from './assets/closeIcon.png';
@@ -15,11 +15,11 @@ interface IModal {
   attack?: number;
   spDef?: number;
   spAttack?: number;
-  type?: string;
-  abilities?: string;
+  types?: string[];
+  abilities?: string[];
 }
 
-const Modal: React.FC<IModal> = ({ id, abilities, name, exp, hp, img, def, attack, spDef, spAttack, type }) => {
+const Modal: React.FC<IModal> = ({ id, abilities, name, exp, hp, img, def, attack, spDef, spAttack, types }) => {
   return (
     <div className={s.wrapper}>
       <div className={s.close}>
@@ -27,15 +27,19 @@ const Modal: React.FC<IModal> = ({ id, abilities, name, exp, hp, img, def, attac
       </div>
       <div className={s.body}>
         <div className={s.row}>
-          <div className={s.imageWrapper}>
+          <div className={cn(s.imageWrapper, s.colorWrap)}>
             <img className={s.image} src={img} alt={name} />
             <div className={s.labelWrap}>
-              <span className={cn(s[type as keyof typeof s], s.label)}>{type}</span>
+              {types?.map((type: string) => (
+                <span key={type} className={cn(s[type as keyof typeof s], s.label, s.colorWrap)}>
+                  {type}
+                </span>
+              ))}
             </div>
           </div>
           <div className={s.info}>
             <div className={s.header}>
-              <h2 className={s.pokemonName}>{name}</h2>
+              <h2 className={s.pokemonName}>{name && toCapitalizeFirstLetter(name)}</h2>
               <div className={s.rate}>
                 <div className={s.generation}>Generation 1</div>
                 <div className={s.idLabel}>{id}</div>
@@ -43,7 +47,7 @@ const Modal: React.FC<IModal> = ({ id, abilities, name, exp, hp, img, def, attac
             </div>
             <div className={s.abilities}>
               <h2 className={s.abilitiesTitle}>Abilities</h2>
-              <div className={s.abilitiesText}>{abilities}</div>
+              <div className={s.abilitiesText}>{abilities?.join('-')}</div>
             </div>
             <div className={s.strength}>
               <div className={s.strengthColumn}>

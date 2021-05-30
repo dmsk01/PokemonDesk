@@ -1,4 +1,4 @@
-@import '../../variables';
+// @import '../../variables';
 
 .root {
   width: 351px;
@@ -165,7 +165,7 @@
     background: linear-gradient(270deg, #a081ec 0.15%, #ad8cff 100%);
   }
   &.electric {
-    background: linear-gradient(270deg, #f2cb07 0.15%, $primary 100%);
+    background: linear-gradient(270deg, #f2cb07 0.15%, #f2c707 100%);
   }
   &.fairy {
     background: linear-gradient(270deg, #f89eae 0.15%, #f4b5c1 100%);
@@ -174,7 +174,7 @@
     background: linear-gradient(270deg, #d44b44 0.15%, #e25149 100%);
   }
   &.fire {
-    background: linear-gradient(270deg, #b33327 0.15%, $danger 100%);
+    background: linear-gradient(270deg, #b33327 0.15%, #df3121 100%);
   }
   &.flying {
     background: linear-gradient(270deg, #969cf1 0.15%, #9096f0 100%);

@@ -20,7 +20,7 @@ const Pokemon: React.FC<IPokemonProps> = ({ id }) => {
     <div className={s.wrapper}>
       <Modal
         id={id}
-        abilities={data?.abilities[0]}
+        abilities={data?.abilities}
         name={data?.name}
         exp={data?.base_experience}
         hp={data?.stats.hp}
@@ -29,7 +29,7 @@ const Pokemon: React.FC<IPokemonProps> = ({ id }) => {
         attack={data?.stats.attack}
         spDef={data?.stats['special-defense']}
         spAttack={data?.stats['special-attack']}
-        type={data?.types[0]}
+        types={data?.types}
       />
     </div>
   );
