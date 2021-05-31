@@ -29,11 +29,3 @@ async function req<T>(endpoint: string, query: object): Promise<T> {
 }
 
 export default req;
-
-// const req = async (endpoint: string) => {
-//   const uri = Url.format(getUrlWithParamsConfig(endpoint));
-
-//   return await fetch(uri).then((res) => res.json());
-// };
-
-// export default req;
