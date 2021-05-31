@@ -15,10 +15,10 @@ const HomePage = () => {
     <div className={s.root}>
       <Layout className={s.contentWrap}>
         <div className={s.contentText}>
-          <Heading tag="h1" size="72px" className={s.title}>
+          <Heading size="l" className={s.title}>
             <b>Find</b> all your favorite <b>Pokemon</b>
           </Heading>
-          <Heading tag="p" size="36px" className={s.paragraph}>
+          <Heading size="m" className={s.paragraph}>
             You can know the type of Pokemon, its strengths, disadvantages and abilities
           </Heading>
           <Button

@@ -5,20 +5,19 @@ import Heading from '../Heading';
 import s from './PokemonCard.module.scss';
 
 interface IPokemonCardProps {
-  [key: string]: string | number | string[];
+  // [key: string]: string | number | string[];
   types: string[];
   img: string;
   name: string;
   attack: number;
   defence: number;
-  // onClick?: (id: string | number) => void;
 }
 
 const PokemonCard: React.FC<IPokemonCardProps> = ({ name, attack, defence, types, img }) => {
   return (
     <div className={s.root}>
       <div className={s.infoWrap}>
-        <Heading size="24px" className={s.titleName}>
+        <Heading size="s" className={s.titleName}>
           {name}
         </Heading>
         <div className={s.statWrap}>

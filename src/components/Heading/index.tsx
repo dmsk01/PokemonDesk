@@ -1,41 +1,27 @@
 import React from 'react';
+import cn from 'classnames';
+import s from './Heading.module.scss';
 
-// interface fontSizeToEl {
-//   h1: '72px';
-//   h2: '64px';
-//   h3: '36px';
-//   h4: '24px';
-//   h5: '18px';
-//   h6: '12px';
-//   p: '16px';
-// }
-
-interface IFontSize {
-  [fontSize: string]: string;
+interface IHeadingLevel {
+  [fontSize: string]: number;
 }
-const fontSizeToEl: IFontSize = {
-  '72px': 'h1',
-  '64px': 'h2',
-  '36px': 'h3',
-  '24px': 'h4',
-  '18px': 'h5',
-  '12px': 'h6',
-  '16px': 'p',
+const HEADING_LEVEL: IHeadingLevel = {
+  xl: 1,
+  l: 2,
+  m: 3,
+  s: 4,
+  xs: 5,
 };
 
 interface IHeadingProps {
-  tag?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p';
-  size?: '72px' | '64px' | '36px' | '24px' | '18px' | '16px' | '12px';
+  size?: 'xl' | 'l' | 'm' | 's' | 'xs';
   className?: string | {};
 }
 
-const Heading: React.FC<IHeadingProps> = ({ children, tag, size, className }) => {
-  const style = size ? { fontSize: size } : '';
-  const tagName = tag || fontSizeToEl[size as keyof typeof fontSizeToEl];
-
-  const el = React.createElement(tagName, { style, className }, children);
-
-  return el;
+const Heading: React.FC<IHeadingProps> = ({ children, size = 'xl', className }) => {
+  const headingProps = { className: cn(s.heading, s[size], className) };
+  
+  return React.createElement(`h${HEADING_LEVEL[size]}`, headingProps, children);
 };
 
 export default Heading;
