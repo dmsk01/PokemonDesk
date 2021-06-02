@@ -16,12 +16,24 @@ interface IPokedexPageProps {
 interface IQuery {
   name?: string;
   limit: number;
+  attack_from: number;
 }
 
 const Pokedex: React.FC<IPokedexPageProps> = () => {
   const [searchValue, setSearchValue] = useState<string>('');
 
-  const [query, setQuery] = useState<IQuery>({ limit: 12 });
+  const [query, setQuery] = useState<IQuery>({ limit: 20, attack_from: 100 });
+
+  // attack_from;
+  // attack_to;
+  // exp_from(опыт);
+  // exp_to;
+  // hp_from(жизнь);
+  // hp_to;
+  // defense_from;
+  // defense_to;
+  // speed_from;
+  // speed_to;
 
   const debouncedValue = useDebounce(searchValue, 500);
 
@@ -34,11 +46,7 @@ const Pokedex: React.FC<IPokedexPageProps> = () => {
       name: e.target.value,
     }));
   };
-  // const onClick = (id: string | number) => navigate(`${LinkEnum.POKEDEX}/${id}`);
 
-  // if (isLoading) {
-  //   return <div>Loading...</div>;
-  // }
   if (isError) {
     return <div>Something went wrong ...</div>;
   }
