@@ -60,7 +60,6 @@ const pokemons = (state = initialState, action: ActionTypes) => {
 
 export const getTypesAction = () => {
   return async (dispatch: Dispatch<ActionTypes>) => {
-    console.log('dfasasdfasdsdafffdasadsffd');
     dispatch({ type: PokemonActionTypes.FETCH_TYPES });
     try {
       const response = await req<ITypesRequest>('getPokemonTypes');
