@@ -28,12 +28,12 @@ module.exports = {
       {
         test: /\.css$/,
         exclude: /node_modules/,
-        use: ['style-loader', 'css-loader'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
       {
         test: /\.scss$/,
         use: [
-          'style-loader',
+          MiniCssExtractPlugin.loader,
           'css-modules-typescript-loader?modules',
           {
             loader: 'css-loader',
@@ -74,6 +74,7 @@ module.exports = {
     new HTMLWebpackPlugins({
       template: path.resolve(__dirname, 'public/index.html'),
     }),
+    new MiniCssExtractPlugin(),
   ],
   devServer: {
     port: 3000,
