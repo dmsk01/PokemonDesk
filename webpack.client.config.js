@@ -1,13 +1,14 @@
 const path = require('path');
 const HTMLWebpackPlugins = require('html-webpack-plugin');
 const NODE_ENV = process.env.NODE_ENV;
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
   },
   mode: NODE_ENV ? NODE_ENV : 'development',
-  entry: path.resolve(__dirname, 'src/index.ts'),
+  entry: path.resolve(__dirname, 'src/index.tsx'),
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.js',
@@ -27,12 +28,12 @@ module.exports = {
       {
         test: /\.css$/,
         exclude: /node_modules/,
-        use: ['style-loader', 'css-loader'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
       {
         test: /\.scss$/,
         use: [
-          'style-loader',
+          MiniCssExtractPlugin.loader,
           'css-modules-typescript-loader?modules',
           {
             loader: 'css-loader',
@@ -65,7 +66,15 @@ module.exports = {
       },
       {
         test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
-        use: ['url-loader'],
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'assets/',
+            },
+          },
+        ],
       },
     ],
   },
@@ -73,6 +82,7 @@ module.exports = {
     new HTMLWebpackPlugins({
       template: path.resolve(__dirname, 'public/index.html'),
     }),
+    new MiniCssExtractPlugin(),
   ],
   devServer: {
     port: 3000,
