@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap);
+.Button-module__root__2w5CA{background:#73d677;box-shadow:0px 9px 0px #4d8f50;border-radius:11px;height:66px;display:inline;padding:0 20px 6px;margin:0px 0px 20px 0px;font-size:24px;font-weight:700;transition:all .2s ease-out 0s;outline:0}.Button-module__root__2w5CA:hover{background:#75e779}.Button-module__root__2w5CA:active{box-shadow:0px 6px 0px #4d8f50;margin:6px 0px 14px 0px}.Button-module__yellow__1YfY0{background:#f2b807;box-shadow:0px 9px 0px #c6a606}.Button-module__yellow__1YfY0:hover{background:#e0e40d}.Button-module__yellow__1YfY0:active{box-shadow:0px 6px 0px #c6a606;margin:6px 0px 14px 0px}.Button-module__green__36UD1{background:#73d677;box-shadow:0px 9px 0px #4d8f50}.Button-module__green__36UD1:hover{background:#75e779}.Button-module__green__36UD1:active{box-shadow:0px 6px 0px #4d8f50;margin:6px 0px 14px 0px}.Button-module__small__1d711{height:18px;min-width:60px;font-size:12px;line-height:14px;padding:0 15px}.Button-module__normal__3gWQx{height:66px;padding:0 20px 6px}.Button-module__inline__24Sv4{display:inline-block}.Button-module__block__34kbB{display:block;width:100%}
+.style-module__root__3ya4x{width:100%;max-width:1280px;padding:0 75px;margin:0 auto}@media(min-width: 769px)and (max-width: 1023px){.style-module__root__3ya4x{padding:0 20px}}
+.Home-module__root__ibUWl{min-height:100vh;background:linear-gradient(180deg, #f5db13 0%, #f2b807 100%)}.Home-module__contentWrap__3jsbX{display:flex;align-items:center;padding-top:150px}.Home-module__contentText__3CVpy{line-height:1.2;font-weight:400;margin:0px 0px 55px 0px}.Home-module__contentParalax__3p7y-{font-size:inherit}.Home-module__paragraph__d062c{margin:0px 0px 25px 0px}.Home-module__title__3J6VY{margin:0px 0px 35px 0px}
+.Paralax-module__root__1DE9p{width:793px;height:680px;position:relative;margin-right:-159px}.Paralax-module__smallPokeBall__2MUcn{position:absolute;top:1%;left:1%}.Paralax-module__cloudSmall__2pR69{position:absolute;left:12.31%;bottom:39.22%}.Paralax-module__cloudBig__1xZvW{position:absolute;left:49.86%;top:-3%}.Paralax-module__pokeBall__2UlBb{position:absolute;top:24.38%;right:-30%}.Paralax-module__pikachu__2qDht{position:absolute;top:0%;left:4.11%}
+.Footer-module__root__2hEVX{width:100%;height:85px;max-width:1280px;margin:0 auto}.Footer-module__wrap__2niW_{width:100%;height:100%;display:flex;justify-content:flex-end;align-items:center}.Footer-module__wrap__2niW_ span{color:red;font-size:24px;margin-top:-5px}
+.Heading-module__heading__1ZQr_{margin:0px 0px 55px 0px}.Heading-module__xl__3GY6w{font-size:72px}.Heading-module__l__1FDJi{font-size:64px}.Heading-module__m__3ONzH{font-size:32px}.Heading-module__s__2UlVv{font-size:24px}.Heading-module__xs__1tHW3{font-size:18px}
+.PokemonCard-module__root__p9IUq{width:351px;height:136px;box-shadow:4px 4px 4px rgba(33,33,33,.1);background:#f6f7f9;border-radius:8px;overflow:hidden;position:relative;margin-bottom:45px;cursor:pointer;transition:all ease .15s}.PokemonCard-module__root__p9IUq:hover{transform:scale(1.03);transition:all ease 0s}.PokemonCard-module__infoWrap__1jNRZ{position:absolute;z-index:1;width:150px;top:6px;left:25px}.PokemonCard-module__titleName__1SRrO{margin-bottom:12px;text-shadow:4px 4px 4px rgba(33,33,33,.1)}.PokemonCard-module__statWrap__1Dj7V{display:flex;margin-bottom:12px}.PokemonCard-module__statItem__cLqVK{font-style:normal;font-weight:normal;font-size:12px;line-height:14px;text-align:center;color:#4b4b4b;margin-right:12px}.PokemonCard-module__statItem__cLqVK:last-child{margin-right:0}.PokemonCard-module__statValue__2lNFM{width:36px;height:36px;border:3px solid #212121;border-radius:50%;overflow:hidden;display:flex;justify-content:center;align-items:center;font-style:normal;font-weight:normal;font-size:15px;line-height:18px;color:#212121;margin:0 auto 8px}.PokemonCard-module__pictureWrap__1jr3q{width:232px;height:100%;background:linear-gradient(270deg, #b33327 0.15%, #fc5b4d 100%);position:absolute;right:0;display:flex;justify-content:center;align-items:center}.PokemonCard-module__pictureWrap__1jr3q img{width:80%}.PokemonCard-module__label__2C37_{background:#f28f16;box-shadow:inset 0px -2px 0px rgba(0,0,0,.18);border-radius:11px;height:15px;min-width:60px;font-style:normal;font-weight:normal;font-size:12px;line-height:14px;text-align:center;color:#212121;padding:0 12px 2px;display:flex;justify-content:center;align-items:center;margin-right:12px}.PokemonCard-module__label__2C37_:last-child{margin-right:0}.PokemonCard-module__labelWrap__3DK5d{display:flex;justify-content:flex-start;align-items:center}.PokemonCard-module__stile__3oXCY,.PokemonCard-module__dark__3W-zl,.PokemonCard-module__rock__2JkS2{background:#a1a1a1}.PokemonCard-module__grass__1A1QR,.PokemonCard-module__bug__290ai{background:#64d368}.PokemonCard-module__ice__1VpDT,.PokemonCard-module__water__AiUpv{background:#3fbdfd}.PokemonCard-module__fire__28TVw,.PokemonCard-module__fighting__2I014,.PokemonCard-module__dragon__vlmaA{background:#ec4917}.PokemonCard-module__normal__2EVYh,.PokemonCard-module__gosth__27yJf,.PokemonCard-module__flying__3k_3M{background:#7faadb}.PokemonCard-module__poison__-Hj2q,.PokemonCard-module__psychic__YjNbH,.PokemonCard-module__fairy__325Gh,.PokemonCard-module__ghost__2sITT{background:#a974bc}.PokemonCard-module__ground__3UaOb{background:#9b787b}.PokemonCard-module__electric__1UXU_{background:#f2bb07}.PokemonCard-module__colorWrap__2ajgJ.PokemonCard-module__bug__290ai{background:linear-gradient(270deg, #9fbb23 0.15%, #9cb820 100%)}.PokemonCard-module__colorWrap__2ajgJ.PokemonCard-module__dark__3W-zl{background:linear-gradient(270deg, #726861 0.15%, #7d726b 100%)}.PokemonCard-module__colorWrap__2ajgJ.PokemonCard-module__dragon__vlmaA{background:linear-gradient(270deg, #a081ec 0.15%, #ad8cff 100%)}.PokemonCard-module__colorWrap__2ajgJ.PokemonCard-module__electric__1UXU_{background:linear-gradient(270deg, #f2cb07 0.15%, #f2c707 100%)}.PokemonCard-module__colorWrap__2ajgJ.PokemonCard-module__fairy__325Gh{background:linear-gradient(270deg, #f89eae 0.15%, #f4b5c1 100%)}.PokemonCard-module__colorWrap__2ajgJ.PokemonCard-module__fighting__2I014{background:linear-gradient(270deg, #d44b44 0.15%, #e25149 100%)}.PokemonCard-module__colorWrap__2ajgJ.PokemonCard-module__fire__28TVw{background:linear-gradient(270deg, #b33327 0.15%, #df3121 100%)}.PokemonCard-module__colorWrap__2ajgJ.PokemonCard-module__flying__3k_3M{background:linear-gradient(270deg, #969cf1 0.15%, #9096f0 100%)}.PokemonCard-module__colorWrap__2ajgJ.PokemonCard-module__ghost__2sITT{background:linear-gradient(270deg, #9175bd 0.15%, #9a7dca 100%)}.PokemonCard-module__colorWrap__2ajgJ.PokemonCard-module__grass__1A1QR{background:linear-gradient(270deg, #67d36b 0.15%, #64d368 100%)}.PokemonCard-module__colorWrap__2ajgJ.PokemonCard-module__ground__3UaOb{background:linear-gradient(270deg, #c8a35c 0.15%, #e0b668 100%)}.PokemonCard-module__colorWrap__2ajgJ.PokemonCard-module__ice__1VpDT{background:linear-gradient(270deg, #8cc7c7 0.15%, #98d8d8 100%)}.PokemonCard-module__colorWrap__2ajgJ.PokemonCard-module__normal__2EVYh{background:linear-gradient(270deg, #999999 0.15%, #a8a8a8 100%)}.PokemonCard-module__colorWrap__2ajgJ.PokemonCard-module__poison__-Hj2q{background:linear-gradient(270deg, #df7edf 0.15%, #d876d8 100%)}.PokemonCard-module__colorWrap__2ajgJ.PokemonCard-module__psychic__YjNbH{background:linear-gradient(270deg, #e9527f 0.15%, #f85888 100%)}.PokemonCard-module__colorWrap__2ajgJ.PokemonCard-module__rock__2JkS2{background:linear-gradient(270deg, #a89333 0.15%, #b8a038 100%)}.PokemonCard-module__colorWrap__2ajgJ.PokemonCard-module__steel__1_JZU{background:linear-gradient(270deg, #658490 0.15%, #6d8f9c 100%)}.PokemonCard-module__colorWrap__2ajgJ.PokemonCard-module__water__AiUpv{background:linear-gradient(270deg, #5bc7fa 0.15%, #35baff 100%)}a{color:#333}
+.Pokedex-module__root__19xly{width:100%}.Pokedex-module__wrapper__3UMOe{max-width:1170px;margin:0 auto;padding-top:60px}.Pokedex-module__pageTitle__1GhaC{text-align:center;margin:0px 0px 35px 0px}.Pokedex-module__cards__1MZps{width:100%;max-width:1125px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between}
+.Input-module__inputWrapper__3qLO1{width:100%;margin:0 auto 35px;max-width:1088px}.Input-module__input__1i6bi{width:100%;box-shadow:4px 4px 16px rgba(1,28,64,.2);border-radius:40px;padding:0 32px;height:53px;background:#f2f2f2;display:flex;justify-content:center;align-items:center;font-size:16px}
+.Modal-module__wrapper__iv9qd{width:100%;max-width:800px}.Modal-module__close__TWnXE{text-align:right;width:100%;height:100%;display:block;margin:0px 0px 15px 0px}.Modal-module__body__2SKPw{width:100%;height:100%;border-radius:8px;overflow:hidden;background:linear-gradient(180deg, #732119 42.19%, #d93e30 100%);border-radius:16px}.Modal-module__row__nBZSW{width:100%;height:100%;display:flex;justify-content:center}.Modal-module__imageWrapper__3Z9-2{min-height:100%;max-width:364px;flex:0 1 364px;background:linear-gradient(270deg, #b33327 0.15%, #d93e30 100%);box-shadow:4px 4px 8px rgba(1,28,64,.2);padding:38px 10px 23px;position:relative}.Modal-module__image__1k-ME{width:100%}.Modal-module__info__17yXj{max-width:435px;height:100%;flex:0 1 435px;padding:25px 15px}.Modal-module__header__2v7ii{width:100%;display:flex;justify-content:space-between;align-items:center;margin:0px 0px 25px 0px}.Modal-module__pokemonName__2HJSZ{font-size:36px;font-weight:700;color:#fdfdfd;text-shadow:4px 4px 4px rgba(33,33,33,.1)}.Modal-module__rate__3C0Y_{display:flex;align-items:center}.Modal-module__generation__3Mw2L{font-size:24px;color:#fdfdfd;margin:0px 8px 0px 0px;white-space:nowrap}.Modal-module__idLabel__2AZtn{width:41px;height:41px;border-radius:50%;overflow:hidden;display:flex;justify-content:center;align-items:center;background:#f2cb07;font-size:14px}.Modal-module__abilities__1yNRJ{max-width:265px;padding:10px 25px;background:#fdfdfd;box-shadow:4px 4px 4px rgba(33,33,33,.1);border-radius:8px;margin:0px 0px 20px 0px}.Modal-module__healthyPoints__2ExUH{width:100%}.Modal-module__infoTitle__2vPVA{text-align:right;font-size:16px}.Modal-module__value__21UBH{font-weight:700}.Modal-module__abilities__1yNRJ{width:100%;max-width:265px;background-color:#fdfdfd;padding:15px 30px;border-radius:6px;margin:0px 0px 25px 0px}.Modal-module__abilitiesTitle__NvRMM{font-size:16px;font-weight:400;margin:0px 0px 8px 0px}.Modal-module__abilitiesText__3sDJ4{font-size:inherit}.Modal-module__strength__UtuHG{max-width:400px;padding:20px;background-color:#fdfdfd;border-radius:6px;margin:0px 0px 25px 0px;display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:-o-flex;display:flex}.Modal-module__strengthColumn__2yJeS{max-width:168px;margin:0px 25px 0px 0px}.Modal-module__strengthTitle__m3SQK{font-size:16px;font-weight:400;margin:0px 0px 4px 0px}.Modal-module__strengthValue__68N16{font-size:16px;font-weight:700;margin:0px 0px 5px 0px}.Modal-module__strengthProgress___zXJh{display:block}progress{-webkit-writing-mode:horizontal-tb !important;-webkit-appearance:progress-bar;box-sizing:border-box;display:inline-block;width:100%;border-radius:3px;vertical-align:-0.2em;height:5px;background:#e3e3e3;overflow:hidden}progress::-webkit-progress-bar{width:255px;border-radius:7.5px;height:15px;background:#e3e3e3}.Modal-module__strengthProgressHp__KidIt progress::-webkit-progress-value{background:#64d368}.Modal-module__strengthProgressHp__KidIt progress::-moz-progress-value{background:#64d368}.Modal-module__strengthProgressExp__3RM85 progress::-webkit-progress-value{background:#f4cd0e}.Modal-module__strengthProgressExp__3RM85 progress::-moz-progress-value{background:#f4cd0e}progress::-webkit-progress-value{background:#add136}progress::-moz-progress-value{background:#add136}.Modal-module__capabilities__1M2zg{display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:-o-flex;display:flex;justify-content:space-between}.Modal-module__capability___pH8T{background-color:#fdfdfd;border-radius:6px;padding:8px;text-align:center;display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:-o-flex;display:flex;-webkit-flex-direction:column;-moz-flex-direction:column;-ms-flex-direction:column;-o-flex-direction:column;flex-direction:column;-ms-align-items:center;align-items:center;min-width:70px}.Modal-module__capabilityValue__3UtRf{width:35px;height:35px;border:3px solid #000;border-radius:50%;display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:-o-flex;display:flex;justify-content:center;align-items:center;margin:0px 0px 10px 0px}.Modal-module__capabilityName__3jtkc{font-size:12px}.Modal-module__label__3va8T{background:#f2b716;box-shadow:inset 0px -2px 0px rgba(0,0,0,.18);border-radius:11px;height:15px;min-width:60px;font-style:normal;font-weight:normal;font-size:12px;line-height:14px;text-align:center;color:#212121;padding:0 12px 2px;display:flex;justify-content:center;align-items:center;margin-right:12px}.Modal-module__label__3va8T:last-child{margin-right:0}.Modal-module__labelWrap__1oTSF{position:absolute;right:10px;bottom:15px;display:flex;justify-content:flex-start;align-items:center}.Modal-module__stile__eQixD,.Modal-module__dark__3_AZx,.Modal-module__rock__11ECr{background:#a1a1a1}.Modal-module__grass__1Gggi,.Modal-module__bug__k7wwS{background:#64d368}.Modal-module__ice__32C5E,.Modal-module__water__7gICh{background:#3fbdfd}.Modal-module__fire__3PRiH,.Modal-module__fighting__2wyoN,.Modal-module__dragon__1onBn{background:#ec4917}.Modal-module__normal__x36sc,.Modal-module__gosth__2z6dv,.Modal-module__flying__2QKiE{background:#7faadb}.Modal-module__poison__2UQzw,.Modal-module__psychic__3NUIm,.Modal-module__fairy__2J-c4,.Modal-module__ghost__2JO0T{background:#a974bc}.Modal-module__ground__2Yvsd{background:#9b787b}.Modal-module__electric__rWPW_{background:#f2bb07}.Modal-module__colorWrap__3g1uS.Modal-module__bug__k7wwS{background:linear-gradient(270deg, #9fbb23 0.15%, #9cb820 100%)}.Modal-module__colorWrap__3g1uS.Modal-module__dark__3_AZx{background:linear-gradient(270deg, #726861 0.15%, #7d726b 100%)}.Modal-module__colorWrap__3g1uS.Modal-module__dragon__1onBn{background:linear-gradient(270deg, #a081ec 0.15%, #ad8cff 100%)}.Modal-module__colorWrap__3g1uS.Modal-module__electric__rWPW_{background:linear-gradient(270deg, #f2cb07 0.15%, #f2c707 100%)}.Modal-module__colorWrap__3g1uS.Modal-module__fairy__2J-c4{background:linear-gradient(270deg, #f89eae 0.15%, #f4b5c1 100%)}.Modal-module__colorWrap__3g1uS.Modal-module__fighting__2wyoN{background:linear-gradient(270deg, #d44b44 0.15%, #e25149 100%)}.Modal-module__colorWrap__3g1uS.Modal-module__fire__3PRiH{background:linear-gradient(270deg, #b33327 0.15%, #df3121 100%)}.Modal-module__colorWrap__3g1uS.Modal-module__flying__2QKiE{background:linear-gradient(270deg, #969cf1 0.15%, #9096f0 100%)}.Modal-module__colorWrap__3g1uS.Modal-module__ghost__2JO0T{background:linear-gradient(270deg, #9175bd 0.15%, #9a7dca 100%)}.Modal-module__colorWrap__3g1uS.Modal-module__grass__1Gggi{background:linear-gradient(270deg, #67d36b 0.15%, #64d368 100%)}.Modal-module__colorWrap__3g1uS.Modal-module__ground__2Yvsd{background:linear-gradient(270deg, #c8a35c 0.15%, #e0b668 100%)}.Modal-module__colorWrap__3g1uS.Modal-module__ice__32C5E{background:linear-gradient(270deg, #8cc7c7 0.15%, #98d8d8 100%)}.Modal-module__colorWrap__3g1uS.Modal-module__normal__x36sc{background:linear-gradient(270deg, #999999 0.15%, #a8a8a8 100%)}.Modal-module__colorWrap__3g1uS.Modal-module__poison__2UQzw{background:linear-gradient(270deg, #df7edf 0.15%, #d876d8 100%)}.Modal-module__colorWrap__3g1uS.Modal-module__psychic__3NUIm{background:linear-gradient(270deg, #e9527f 0.15%, #f85888 100%)}.Modal-module__colorWrap__3g1uS.Modal-module__rock__11ECr{background:linear-gradient(270deg, #a89333 0.15%, #b8a038 100%)}.Modal-module__colorWrap__3g1uS.Modal-module__steel__112fV{background:linear-gradient(270deg, #658490 0.15%, #6d8f9c 100%)}.Modal-module__colorWrap__3g1uS.Modal-module__water__7gICh{background:linear-gradient(270deg, #5bc7fa 0.15%, #35baff 100%)}
+.Pokemon-module__wrapper__3HWCR{width:100%;height:100%;display:flex;justify-content:center;align-items:center}
+.NotFound-module__root__2xXe9{width:100vw;height:100vh;overflow:hidden;background-color:#d93e30;padding:70px}.NotFound-module__wrapper__45e80{width:100%;height:100%;display:flex;flex-direction:column;align-items:center}.NotFound-module__bgImage__3mX6u{width:100%;max-width:1277px;max-height:670px}.NotFound-module__title__gI63-{font-size:48px;margin:0px 0px 60px 0px}.NotFound-module__error__2PQWE{width:100%}.NotFound-module__button__2cKil{width:230px}
+.Header-module__root__35hrx{height:93px;display:flex;justify-content:center;align-items:center;background:#f5db13;box-shadow:0px 4px 16px rgba(1,28,64,.2)}.Header-module__wrap__1A5k_{width:100%;max-width:1125px;height:63px;display:flex;justify-content:space-between;align-items:center}.Header-module__pokemonLogo__u8bOL{width:158px;height:63px}.Header-module__menuWrap__cQgQx{display:flex;align-items:center;max-width:658px;width:100%;justify-content:space-between}.Header-module__menuLink__36t3v{font-style:normal;font-weight:normal;font-size:25px;line-height:29px;color:#212121;text-decoration:none;position:relative}.Header-module__menuLink__36t3v:after{content:"";display:block;position:absolute;bottom:-8px;height:1px;width:1%;background:#212121;border:1px solid #212121;border-radius:6px;opacity:0;left:50%;transform:translate(-50%, 0);transition:opacity,width ease-in-out .25s}.Header-module__menuLink__36t3v:hover:after,.Header-module__menuLink__36t3v.Header-module__activeLink__17Pq4:after{width:100%;opacity:1}
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: 'Karla', sans-serif;
+}
+
+input,
+button,
+textarea {
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+
+/*# sourceMappingURL=main.css.map*/
