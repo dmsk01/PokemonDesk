@@ -8,7 +8,8 @@
   "scripts": {
     "build:dev": "env NODE_ENV=development webpack --config webpack.config.js",
     "build:prod": "env NODE_ENV=production NODE_OPTIONS=--max-old-space-size=4096 webpack --config webpack.config.js",
-    "start": "env NODE_ENV=development webpack-dev-server"
+    "dev": "env NODE_ENV=development webpack-dev-server",
+    "start": "node dist/server.js"
   },
   "dependencies": {
     "@hapi/hapi": "^20.1.3",
